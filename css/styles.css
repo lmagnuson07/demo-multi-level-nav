@@ -1,1 +1,41 @@
-/* developer styles go here */
+body {
+    font-family: sans-serif;
+}
+
+header {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+/* Step 1: Style everything for the small screen first */
+/* When styling the text, style the anchor tag directly to overwite the browser styling. Layout styling goes on the li element. */
+
+ul.menu {
+    background-color: #191919;
+}
+
+ul.menu a {
+    color: #f5f5f5;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    /* expand the clickable area to fill the whole li element */
+    display: block; 
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+ul.menu a:hover,
+ul.menu a:active {
+    background-color: #262626;
+    border-radius: 4px;
+}
+
+/* Style the top level menu to look different then the submenu */
+ul.submenu > li a {
+    text-decoration: none;
+}
+
+ul.submenu {
+    padding: 0 1.25rem;
+}

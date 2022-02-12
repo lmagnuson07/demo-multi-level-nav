@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo Multi Level Nav</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Multi Level Nav</h1>
+        <nav>
+            <!-- to create a second level nav, nest an ul list inside of an existing li element -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li>
+                    <a href="#">Books</a>
+                    <!-- add a second level of navigation links that belongs to 'books' -->
+                    <ul class="submenu">
+                        <li><a href="#">JavaScript for Web Designers</a></li>
+                        <li><a href="#">Git for Humans</a></li>
+                        <li><a href="#">Designing for Touch</a></li>
+                        <li><a href="#">Progressive Web Apps</a></li>
+                        <li><a href="#">The new SCC Layout</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                    <!-- add a second level nav links that belongs to events -->
+                    <ul class="submenu">
+                        <li><a href="#">Front End Dev Con</a></li>
+                        <li><a href="#">React Summit</a></li>
+                        <li><a href="#">Designing or Performance</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Memberships</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
